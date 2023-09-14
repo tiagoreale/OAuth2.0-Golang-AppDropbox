@@ -30,7 +30,7 @@ func main() {
 
 	fmt.Println("Token de Acesso:", newToken.AccessToken)
 
-	// Salvar o novo token de acesso temporário em um arquivo
+	
 	err = ioutil.WriteFile("/home/tiagoreale/go/src/DropBox/aplicacao/temp.txt", []byte(newToken.AccessToken), 0644)
 	if err != nil {
 		log.Fatal("Erro ao salvar o token em arquivo: ", err)
